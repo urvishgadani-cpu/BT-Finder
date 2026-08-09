@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Build with Buildozer
-        uses: Artemis-Software/buildozer-action@v1
+        uses: kivy/buildozer-action@master
         with:
           command: buildozer android debug
           subfolder: .
@@ -21,3 +21,4 @@ jobs:
         with:
           name: app-release
           path: bin/*.apk
+
